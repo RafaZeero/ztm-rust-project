@@ -1,5 +1,7 @@
+fn add(num_one: i32, num_two: i32) -> i32 {
+    return num_one + num_two;
+}
+
 fn main() {
-    let my_name = "Daniel";
-    let mut you_can_change_me = "this";
-    you_can_change_me = "that"
+    let foo = add(1, 2);
 }

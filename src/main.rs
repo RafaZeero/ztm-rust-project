@@ -3,13 +3,12 @@ fn add(num_one: i32, num_two: i32) -> i32 {
 }
 
 fn main() {
-    let foo = add(10, 2);
-    // how to print a variable
-    println!("first print: {}", foo);
-    //how to print more than one variable
-    println!("second print: {} {}", foo, true);
-    // how to print one variable multiple times OR how to select which variable goes where
-    println!("third print: {0} {0}", foo);
-    // complex placeholder
-    println!("fourth print: {:?}", foo);
+    let total = add(10, 45);
+
+    if total > 50 {
+        println!("You qualify for free shipping!!");
+        println!("Total: {}", total - 10);
+    } else {
+        println!("Total: {:?}", total);
+    }
 }
